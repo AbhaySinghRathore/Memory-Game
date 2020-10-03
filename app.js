@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let cards = document.querySelectorAll('img');
         let firstCardId = cardsChosenId[0];
         let secondCardId = cardsChosenId[1];
-        if (cardsChosen[0] === cardsChosen[1]) {
+        if (cardsChosen[0] === cardsChosen[1] && cardsChosenId[0] !== cardsChosenId[1]) {
             alert('you found a match!');
             cards[firstCardId].setAttribute('src', 'images/white.png');
             cards[secondCardId].setAttribute('src', 'images/white.png');
